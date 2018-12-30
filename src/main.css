@@ -5,3 +5,13 @@
 body {
     background-color: #79589f;
 }
+
+.container {
+    color: black;
+    background: white;
+    border: 1px solid black;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20%;
+}

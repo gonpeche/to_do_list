@@ -1,18 +1,13 @@
 import React, { Component } from 'react'
-import QuoteContainer from './Quote/QuoteContainer';
+import QuoteContainer from './Containers/QuoteContainer';
+import InputContainer from './Containers/InputContainer'
 
 export default class Main extends Component {
   render() {
     return (
-      <div>
-        <div>
-          <h2> To Do List </h2>
-          <input type="text" placeholder="Add task"></input>
-        </div>
-        
-        {
-          // <QuoteContainer />
-        }
+      <div className="container">
+        <InputContainer />
+        <QuoteContainer />
       </div>
     )
   }
