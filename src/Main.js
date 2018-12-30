@@ -5,7 +5,13 @@ export default class Main extends Component {
   render() {
     return (
       <div>
-        <QuoteContainer />
+        <div>
+          <h2> To Do List </h2>
+          <input type="text" placeholder="Add task"></input>
+        </div>
+        {
+          // <QuoteContainer />
+        }
       </div>
     )
   }
