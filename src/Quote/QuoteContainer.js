@@ -21,6 +21,7 @@ export default class QuoteContainer extends Component {
         console.log(this.state.frase)
         return (
         <div>
+        Trump says:
             {this.state.frase}
         </div>
         )
