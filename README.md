@@ -1,3 +1,3 @@
-# React & Webpack/Babel boilerplate made with love
+# To Do List
 
-May this be the starter point of many great projects.
+Simple To Do List with some extra magic
