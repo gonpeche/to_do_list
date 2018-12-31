@@ -5,8 +5,15 @@ export default class InputContainer extends Component {
   render() {
     return (
         <div>
-          <h2> To Do List </h2>
-          <input type="text" placeholder="Add task"></input>
+          <h2 className="todotitle"> To Do List </h2>
+          <form onSubmit={(e) => this.props.handleSubmit(e)} className="form">
+            <input 
+              onChange={(e) => this.props.handleChange(e)} 
+              className="input" 
+              type="text" 
+              value={this.props.input}>
+            </input>
+          </form>
         </div>
     )
   }
