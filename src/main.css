@@ -18,6 +18,8 @@ body {
 
 .form {
     width: 100%;
+    border: 1px solid red;
+    margin-bottom: 40px;
 }
 .input {
     width: 40%;
@@ -25,4 +27,20 @@ body {
     margin-left: 20%;
     /* margin-left: 30%;
     margin-right: 30%; */
+}
+
+ul {
+    /* border: 1px solid black; */
+    list-style-type: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* width: 90%; */
+    /* margin: 0 auto; */
+    /* margin: 0 auto; */
+}
+
+
+li {
+    text-decoration: none;
+    padding: 10px;
 }
