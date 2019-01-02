@@ -13,8 +13,9 @@ const styles = () => ({
   });
 
 class TodoContainer extends Component {
+
   render() {
-      const { classes } = this.props
+      const { classes, remove } = this.props
     return (
         <React.Fragment>
         <ul className="ul">
@@ -24,7 +25,7 @@ class TodoContainer extends Component {
                     return (
                         <li key={i}> {todo}
                             <IconButton aria-label="Delete" className={classes.margin}>
-                                <DeleteIcon fontSize="small" />
+                                <DeleteIcon fontSize="small" onClick={() => remove(i)}/>
                             </IconButton>
                         </li>
                     )

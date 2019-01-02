@@ -10,6 +10,7 @@ export default class Main extends Component {
       list: [],
       input: ''
     }
+    this.remove = this.remove.bind(this)
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
@@ -29,6 +30,15 @@ export default class Main extends Component {
     })
   }
 
+  remove(e) {
+    let todos = [... this.state.list]
+    todos.splice(e,1)
+    this.setState({
+      list: [... todos]
+    })
+
+  }
+
   render() {
     return (
       <div className="container">
@@ -37,6 +47,7 @@ export default class Main extends Component {
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange} />
         <TodoContainer 
+          remove={this.remove}
           list={this.state.list}/>
         {
           // <QuoteContainer />

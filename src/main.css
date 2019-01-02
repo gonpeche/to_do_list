@@ -1,15 +1,17 @@
 body {
-    background-color: #8968af;
+    background-color: #b29ec9;
 }
 
 .container {
-    color: black;
+    color: rgb(129, 52, 52);
     background: white;
-    border: 1px solid black;
+    border: 3px solid black;
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
 }
 
 .todotitle {
@@ -18,7 +20,7 @@ body {
 
 .form {
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 40px;
 }
 .input {
