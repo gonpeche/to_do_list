@@ -23,10 +23,10 @@ class TodoContainer extends Component {
             this.props.list.length > 0 ?
                 this.props.list.map( function(todo, i) { 
                     return (
-                        <li key={i}> {todo}
-                            <IconButton aria-label="Delete" className={classes.margin}>
+                        <li key={i}>{i + 1}-{todo}
+                        <IconButton aria-label="Delete" className={classes.margin}>
                                 <DeleteIcon fontSize="small" onClick={() => remove(i)}/>
-                            </IconButton>
+                        </IconButton>
                         </li>
                     )
                 }) : null

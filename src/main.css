@@ -1,5 +1,7 @@
 body {
     background-color: #b29ec9;
+    font-family: monospace;
+    height: 100vh;
 }
 
 .container {
@@ -11,7 +13,7 @@ body {
     margin-right: 30%;
     margin-top: 10%;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 6px 6px 2px;
 }
 
 .todotitle {
@@ -41,8 +43,24 @@ ul {
     /* margin: 0 auto; */
 }
 
-
 li {
     text-decoration: none;
     padding: 10px;
+    padding-left:9px;
+    font-size: 18px;
+    transition: background 10ms;
+}
+
+li:hover {
+    background-color: rgb(248, 245, 217);
+}
+
+/* .trump_container {
+    display: flex;
+    justify-content: baseline;
+} */
+
+.img {
+    display: flex;
+    align-content: center;
 }

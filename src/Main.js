@@ -41,18 +41,24 @@ export default class Main extends Component {
 
   render() {
     return (
-      <div className="container">
-        <InputContainer 
-          input={this.state.input}
-          handleSubmit={this.handleSubmit}
-          handleChange={this.handleChange} />
-        <TodoContainer 
-          remove={this.remove}
-          list={this.state.list}/>
-        {
-          // <QuoteContainer />
-        }
-      </div>
+      <React.Fragment>
+        <div className="container">
+          <InputContainer 
+            input={this.state.input}
+            handleSubmit={this.handleSubmit}
+            handleChange={this.handleChange} />
+          <TodoContainer 
+            remove={this.remove}
+            list={this.state.list}/>
+          
+          <QuoteContainer />
+          
+        </div>
+        <div className="trump_container">
+          <img src="https://vignette.wikia.nocookie.net/pseudociencia/images/8/82/Donald_Trump.png/revision/latest?cb=20171216201859&path-prefix=es" alt="Smiley face" height="150" width="150"></img>
+        </div>
+
+      </React.Fragment>
     )
   }
 }
