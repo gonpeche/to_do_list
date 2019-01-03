@@ -2,8 +2,12 @@ import React, { Component } from 'react'
 import QuoteContainer from './Containers/QuoteContainer';
 import InputContainer from './Containers/InputContainer'
 import TodoContainer from './Containers/TodoContainer';
+import HTML5Backend from 'react-dnd-html5-backend'
+import { DragDropContext } from 'react-dnd'
 
-export default class Main extends Component {
+
+
+class Main extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -43,20 +47,30 @@ export default class Main extends Component {
     return (
       <React.Fragment>
         <div className="container">
-          <InputContainer 
-            input={this.state.input}
-            handleSubmit={this.handleSubmit}
-            handleChange={this.handleChange} />
-          <TodoContainer 
-            remove={this.remove}
-            list={this.state.list}/>
+          <div className="todo">
+            <InputContainer 
+              input={this.state.input}
+              handleSubmit={this.handleSubmit}
+              handleChange={this.handleChange} />
+            <TodoContainer 
+              remove={this.remove}
+              list={this.state.list}/>
+          </div>
+
+          <div className="done" >
+            <h1 className="todotitle">
+              Done
+            </h1>
+          </div>
         </div>
-        <img src="https://vignette.wikia.nocookie.net/pseudociencia/images/8/82/Donald_Trump.png/revision/latest?cb=20171216201859&path-prefix=es" alt="Smiley face" height="150" width="150"></img>
+        {/* <img src="https://vignette.wikia.nocookie.net/pseudociencia/images/8/82/Donald_Trump.png/revision/latest?cb=20171216201859&path-prefix=es" alt="Smiley face" height="150" width="150"></img>
         <div className="speech-bubble-ds">
           <QuoteContainer />
           <div className="speech-bubble-ds-arrow"></div>
-        </div>
+        </div> */}
       </React.Fragment>
     )
   }
 }
+
+export default DragDropContext(HTML5Backend)(Main)

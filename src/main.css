@@ -4,19 +4,48 @@ body {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 500px;
+}
+
+.todo {
     color: rgb(129, 52, 52);
     background: white;
     border: 3px solid black;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 25%;
+    margin-left: 20%;
+    /* margin-right: 60%; */
     margin-top: 10%;
     border-radius: 10px;
     box-shadow: 6px 6px 2px;
+    /* float:left; */
 }
 
 .todotitle {
     text-align: center
+}
+
+#app > div > div.todo > div.item > ul > div > li > button {
+    padding: 0px;
+    float: right;
+}
+
+
+.done {
+    color: rgb(129, 52, 52);
+    background: white;
+    border: 3px solid black;
+    width: 25%;
+    /* height: 40%; */
+    margin-right: 10%;
+    margin-left: 20%;
+    /* margin-right: 60%; */
+    margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 6px 6px 2px;
+    /* float: right; */
 }
 
 .form {
