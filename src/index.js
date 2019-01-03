@@ -5,9 +5,9 @@ import ReactDOM from "react-dom";
 
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
       <Main />
-    </div>
+    </React.Fragment>
   );
 };
 export default App;

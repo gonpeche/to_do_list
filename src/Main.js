@@ -50,14 +50,12 @@ export default class Main extends Component {
           <TodoContainer 
             remove={this.remove}
             list={this.state.list}/>
-          
+        </div>
+        <img src="https://vignette.wikia.nocookie.net/pseudociencia/images/8/82/Donald_Trump.png/revision/latest?cb=20171216201859&path-prefix=es" alt="Smiley face" height="150" width="150"></img>
+        <div className="speech-bubble-ds">
           <QuoteContainer />
-          
+          <div className="speech-bubble-ds-arrow"></div>
         </div>
-        <div className="trump_container">
-          <img src="https://vignette.wikia.nocookie.net/pseudociencia/images/8/82/Donald_Trump.png/revision/latest?cb=20171216201859&path-prefix=es" alt="Smiley face" height="150" width="150"></img>
-        </div>
-
       </React.Fragment>
     )
   }
