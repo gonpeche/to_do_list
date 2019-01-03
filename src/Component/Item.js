@@ -17,6 +17,7 @@ const itemSource = {
     }
 }
 
+
 function collect(connect, monitor) {
     return {
         connectDragSource: connect.dragSource(),
